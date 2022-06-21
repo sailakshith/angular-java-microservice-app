@@ -1,0 +1,12 @@
+.card {
+  width: 200px;
+  height: 200px;
+}
+
+.card img {
+  object-fit: cover;
+  transition: visibility 0s ease 0s, opacity 0.3s linear 0s;
+  opacity: 1;
+  visibility: visible;
+}
+

@@ -1,0 +1,33 @@
+<div class="container">
+  <form [formGroup]="leaveForm">
+    <div class="mb-3 row">
+      <label for="inputName" class="col-xs-4 col-form-label">employee Id:</label>
+      <div class="col-xs-8">
+        <input type="text" class="form-control" formControlName="employeeId">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputName" class="col-xs-4 col-form-label">From Date:</label>
+      <div class="col-xs-8">
+        <input type="date" class="form-control" formControlName="fromDate">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputName" class="col-xs-4 col-form-label">To Date:</label>
+      <div class="col-xs-8">
+        <input type="date" class="form-control" formControlName="toDate">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputName" class="col-xs-4 col-form-label">Reason</label>
+      <div class="col-xs-8">
+        <textarea class="form-control" formControlName="reason"></textarea>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="offset-sm-4 col-sm-8">
+        <button type="submit" (click)="applyLeave()" class="btn btn-primary">Apply Leave</button>&nbsp;
+      </div>
+    </div>
+  </form>
+</div>

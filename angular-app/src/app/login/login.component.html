@@ -1,0 +1,23 @@
+<div class="container">
+  <form [formGroup]="loginForm">
+    <div class="mb-3 row">
+      <label for="inputName" class="col-xs-4 col-form-label">username</label>
+      <div class="col-xs-8">
+        <input type="text" class="form-control" name="inputName" id="inputName" placeholder="username" formControlName="username">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputName" class="col-xs-4 col-form-label">password</label>
+      <div class="col-xs-8">
+        <input type="password" class="form-control" name="inputName" id="inputName" placeholder="password" formControlName="password">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="offset-sm-4 col-sm-8">
+        <button type="submit" (click)="login()" class="btn btn-primary">login</button>&nbsp;
+        <button class="btn btn-primary">forgot password</button>&nbsp;
+        <button type="reset" class="btn btn-primary">reset</button>
+      </div>
+    </div>
+  </form>
+</div>

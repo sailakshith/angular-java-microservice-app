@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>username</th>
+        <th>Manager Id</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.employeeId}}</td>
+        <td>{{employee.username}}</td>
+        <td>{{employee.employeeName}}</td>
+        <td>{{employee.managerId}}</td>
+        <td><button class="btn btn-primary">Edit</button>&nbsp;&nbsp;<button class="btn btn-danger">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
